@@ -7,7 +7,8 @@ const getToken = () => localStorage.getItem('token');
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: "https://vercel-backend-taupe.vercel.app/api"
+,
   headers: {
     'Content-Type': 'application/json',
   },
